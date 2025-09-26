@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Redirect</title>
+  <script>
+    window.onload = function() {
+      // Replace these with your real survey links
+      const surveys = [
+        "https://qualtricsxm9qllgrlv7.qualtrics.com/jfe/form/SV_88EX8IFAmPPy2Oy",
+        "https://qualtricsxm9qllgrlv7.qualtrics.com/jfe/form/SV_3aR2dLKkc2oikmO"
+      ];
+
+      // Random choice
+      const randomIndex = Math.floor(Math.random() * surveys.length);
+
+      // Redirect
+      window.location.href = surveys[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the survey...</p>
+</body>
+</html>
